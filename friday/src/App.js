@@ -1,21 +1,47 @@
 import React from 'react';
 import AvailableTimes from 'react-available-times';
-import request from 'request';
 
-function getCalendar() {
-  request
-    .get('http://google.com/img.png')
-    .on('response', function(response) {
-      console.log(response.statusCode) // 200
-      console.log(response.headers['content-type']) // 'image/png'
+class App extends React.Component {
+
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      spoofedData: [{'start': new Date('September 29, 2019 08:00:00'), 'end' : new Date('September 29, 2019 11:00:00'), calendarId: 'Work'},
+                      {'start': new Date('September 29, 2019 11:00:00'), 'end' : new Date('September 29, 2019 14:00:00')},
+                      {'start': new Date('September 29, 2019 14:00:00'), 'end' : new Date('September 29, 2019 17:00:00')},
+                      {'start': new Date('September 30, 2019 08:00:00'), 'end' : new Date('September 30, 2019 11:00:00')},
+                      {'start': new Date('September 30, 2019 11:00:00'), 'end' : new Date('September 30, 2019 14:00:00')},
+                      {'start': new Date('September 30, 2019 14:00:00'), 'end' : new Date('September 30, 2019 17:00:00')},
+                      {'start': new Date('October 1, 2019 08:00:00'), 'end' : new Date('October 1, 2019 11:00:00')},
+                      {'start': new Date('October 1, 2019 11:00:00'), 'end' : new Date('October 1, 2019 14:00:00')},
+                      {'start': new Date('October 1, 2019 14:00:00'), 'end' : new Date('October 1, 2019 17:00:00')},
+                      {'start': new Date('October 2, 2019 08:00:00'), 'end' : new Date('October 2, 2019 11:00:00')},
+                      {'start': new Date('October 2, 2019 11:00:00'), 'end' : new Date('October 2, 2019 14:00:00')},
+                      {'start': new Date('October 2, 2019 14:00:00'), 'end' : new Date('October 2, 2019 17:00:00')},
+                      {'start': new Date('October 3, 2019 08:00:00'), 'end' : new Date('October 3, 2019 11:00:00')},
+                      {'start': new Date('October 3, 2019 11:00:00'), 'end' : new Date('October 3, 2019 14:00:00')},
+                      {'start': new Date('October 3, 2019 14:00:00'), 'end' : new Date('October 3, 2019 17:00:00')},
+                      {'start': new Date('October 4, 2019 08:00:00'), 'end' : new Date('October 4, 2019 11:00:00')},
+                      {'start': new Date('October 4, 2019 11:00:00'), 'end' : new Date('October 4, 2019 14:00:00')},
+                      {'start': new Date('October 4, 2019 14:00:00'), 'end' : new Date('October 4, 2019 17:00:00')},
+                      {'start': new Date('October 5, 2019 08:00:00'), 'end' : new Date('October 5, 2019 11:00:00')},
+                      {'start': new Date('October 5, 2019 11:00:00'), 'end' : new Date('October 5, 2019 14:00:00')},
+                      {'start': new Date('October 5, 2019 14:00:00'), 'end' : new Date('October 5, 2019 17:00:00')},]
+    };
+
+    this.updateCalendar = this.updateCalendar.bind(this)
+  }
+
+  updateCalendar = () => {
+    this.setState({
+      calendarData: [{'start': new Date('September 27, 2019 08:00:00'), 'end' : new Date('September 27, 2019 09:00:00')}]
     })
-    .pipe(request.put('http://mysite.com/img.png'))
-}
+    console.log(this.state)
+  }
 
-function App() {
-  // const [schedule, setSchedule] = useState(defaultSchedule);
-
-  return (
+  render() {
+    return (
     <div>
       <div class="card">
         <div class="card-header pt-3">
@@ -29,21 +55,11 @@ function App() {
                 id: 'work',
                 title: 'Work',
                 foregroundColor: '#ff00ff',
-                backgroundColor: '#f0f0f0',
+                backgroundColor: '#ffffff',
                 selected: true,
               },
             ]}
-            // onChange={(selections) => {
-            //   selections.forEach(({ start, end }) => {
-            //     console.log('Start:', start, 'End:', end);
-            //   })
-            // }}
-            // onEventsRequested={({ calendarId, start, end, callback }) => {
-            //   loadMoreEvents(calendarId, start, end).then(callback);
-            // }}
-            initialSelections={[
-              { start: new Date('September 28, 2019 08:00:00'), end: new Date('September 28, 2019 09:00:00'), title: 'Jan', calendarId: 'Jan' }
-            ]}
+            initialSelections={this.state.spoofedData}
             height={600}
             recurring={false}
             availableDays={['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']}
@@ -117,7 +133,8 @@ function App() {
         </div>
       </div>
     </div>
-  );
+    );
+  }
 }
 
 export default App;
