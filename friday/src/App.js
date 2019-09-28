@@ -1,38 +1,70 @@
 import React from 'react';
 import AvailableTimes from 'react-available-times';
 
-function App() {
-  // const [schedule, setSchedule] = useState(defaultSchedule);
+class App extends React.Component {
 
-  return (
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      spoofedData: [{'start': new Date('September 29, 2019 08:00:00'), 'end' : new Date('September 29, 2019 11:00:00'), calendarId: 'Work'},
+                      {'start': new Date('September 29, 2019 11:00:00'), 'end' : new Date('September 29, 2019 14:00:00')},
+                      {'start': new Date('September 29, 2019 14:00:00'), 'end' : new Date('September 29, 2019 17:00:00')},
+                      {'start': new Date('September 30, 2019 08:00:00'), 'end' : new Date('September 30, 2019 11:00:00')},
+                      {'start': new Date('September 30, 2019 11:00:00'), 'end' : new Date('September 30, 2019 14:00:00')},
+                      {'start': new Date('September 30, 2019 14:00:00'), 'end' : new Date('September 30, 2019 17:00:00')},
+                      {'start': new Date('October 1, 2019 08:00:00'), 'end' : new Date('October 1, 2019 11:00:00')},
+                      {'start': new Date('October 1, 2019 11:00:00'), 'end' : new Date('October 1, 2019 14:00:00')},
+                      {'start': new Date('October 1, 2019 14:00:00'), 'end' : new Date('October 1, 2019 17:00:00')},
+                      {'start': new Date('October 2, 2019 08:00:00'), 'end' : new Date('October 2, 2019 11:00:00')},
+                      {'start': new Date('October 2, 2019 11:00:00'), 'end' : new Date('October 2, 2019 14:00:00')},
+                      {'start': new Date('October 2, 2019 14:00:00'), 'end' : new Date('October 2, 2019 17:00:00')},
+                      {'start': new Date('October 3, 2019 08:00:00'), 'end' : new Date('October 3, 2019 11:00:00')},
+                      {'start': new Date('October 3, 2019 11:00:00'), 'end' : new Date('October 3, 2019 14:00:00')},
+                      {'start': new Date('October 3, 2019 14:00:00'), 'end' : new Date('October 3, 2019 17:00:00')},
+                      {'start': new Date('October 4, 2019 08:00:00'), 'end' : new Date('October 4, 2019 11:00:00')},
+                      {'start': new Date('October 4, 2019 11:00:00'), 'end' : new Date('October 4, 2019 14:00:00')},
+                      {'start': new Date('October 4, 2019 14:00:00'), 'end' : new Date('October 4, 2019 17:00:00')},
+                      {'start': new Date('October 5, 2019 08:00:00'), 'end' : new Date('October 5, 2019 11:00:00')},
+                      {'start': new Date('October 5, 2019 11:00:00'), 'end' : new Date('October 5, 2019 14:00:00')},
+                      {'start': new Date('October 5, 2019 14:00:00'), 'end' : new Date('October 5, 2019 17:00:00')},]
+    };
+
+    this.updateCalendar = this.updateCalendar.bind(this)
+  }
+
+  updateCalendar = () => {
+    this.setState({
+      calendarData: [{'start': new Date('September 27, 2019 08:00:00'), 'end' : new Date('September 27, 2019 09:00:00')}]
+    })
+    console.log(this.state)
+  }
+
+  render() {
+    return (
     <div>
-      <AvailableTimes
-        weekStartsOn="sunday"
-        calendars={[
-          {
-            id: 'work',
-            title: 'Work',
-            foregroundColor: '#ff00ff',
-            backgroundColor: '#f0f0f0',
-            selected: true,
-          },
-        ]}
-        // onChange={(selections) => {
-        //   selections.forEach(({ start, end }) => {
-        //     console.log('Start:', start, 'End:', end);
-        //   })
-        // }}
-        // onEventsRequested={({ calendarId, start, end, callback }) => {
-        //   loadMoreEvents(calendarId, start, end).then(callback);
-        // }}
-        initialSelections={[
-          { start: new Date('September 28, 2019 08:00:00'), end: new Date('September 28, 2019 09:00:00'), title: 'Jan', calendarId: 'Jan' }
-        ]}
-        height={600}
-        recurring={false}
-        availableDays={['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']}
-        availableHourRange={{ start: 9, end: 22 }}
-      />
+      <div class="card">
+        <div class="card-header pt-3">
+          <h2>Employee Scheduling Calendar</h2>
+        </div>
+        <div class="p-3">
+          <AvailableTimes
+            weekStartsOn="sunday"
+            calendars={[
+              {
+                id: 'work',
+                title: 'Work',
+                foregroundColor: '#ff00ff',
+                backgroundColor: '#ffffff',
+                selected: true,
+              },
+            ]}
+            initialSelections={this.state.spoofedData}
+            height={600}
+            recurring={false}
+            availableDays={['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']}
+            availableHourRange={{ start: 9, end: 22 }}
+          />
     <div class="accordion mt-5" id="accordionExample">
 		<div class="card">
 			<div class="card-header" id="headingOne">
@@ -114,6 +146,7 @@ function App() {
 											</label>
 											<label class="btn btn-info">
 												<input type="checkbox" name="options" id="availability" autocomplete="off"/> Noon
+
 											</label>
 											<label class="btn btn-info">
 												<input type="checkbox" name="options" id="availability" autocomplete="off"/> Afternoon
