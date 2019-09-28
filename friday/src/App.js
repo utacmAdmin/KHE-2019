@@ -59,152 +59,149 @@ function App() {
 								</div>
 								
 								
-								<div class="row my-sm-2">
+								<div class="row my-sm-4">
 									Availability:
-									<ul>
-										<li>
-											<div class='col-lg-2'>
-												<label for="monday">Monday</label>
-											</div>
-											<div class='col-lg-4'>
-												<div class="btn-group btn-group-toggle" data-toggle="buttons">
-													<label class="btn btn-info">
-														<input type="checkbox" name="options" id="availability" autocomplete="off" checked/> Morning
-													</label>
-													<label class="btn btn-info">
-														<input type="checkbox" name="options" id="availability" autocomplete="off"/> Noon
-													</label>
-													<label class="btn btn-info">
-														<input type="checkbox" name="options" id="availability" autocomplete="off"/> Afternoon
-													</label>
-												</div>
-											</div>
-											<p></p>
-										</li>
-										
-										<li>
-											<div class='col-lg-2'>
-												<label for="tuesday">Tuesday</label>
-											</div>
-											<div class='col-lg-4'>
-												<div class="btn-group btn-group-toggle" data-toggle="buttons">
-													<label class="btn btn-info">
-														<input type="checkbox" name="options" id="availability" autocomplete="off" checked/> Morning
-													</label>
-													<label class="btn btn-info">
-														<input type="checkbox" name="options" id="availability" autocomplete="off"/> Noon
-													</label>
-													<label class="btn btn-info">
-														<input type="checkbox" name="options" id="availability" autocomplete="off"/> Afternoon
-													</label>
-												</div>
-											</div>
-											<p></p>
-										</li>
+								</div>
+							
+								<div class="row my-sm-2">
+									<div class='col-lg-3'>
+										<label for="monday">Monday</label>
+									</div>
+									<div class='col-lg-4'>
+										<div class="btn-group btn-group-toggle" data-toggle="buttons">
+											<label class="btn btn-info">
+												<input type="checkbox" name="options" id="availability" autocomplete="off" checked/> Morning
+											</label>
+											<label class="btn btn-info">
+												<input type="checkbox" name="options" id="availability" autocomplete="off"/> Noon
+											</label>
+											<label class="btn btn-info">
+												<input type="checkbox" name="options" id="availability" autocomplete="off"/> Afternoon
+											</label>
+										</div>
+									</div>
+									<p></p>
+								</div>
 
-										<li>
-											<div class='col-lg-2'>
-												<label for="tuesday">Wednesday</label>
-											</div>
-											<div class='col-lg-4'>
-												<div class="btn-group btn-group-toggle" data-toggle="buttons">
-													<label class="btn btn-info">
-														<input type="checkbox" name="options" id="availability" autocomplete="off" checked/> Morning
-													</label>
-													<label class="btn btn-info">
-														<input type="checkbox" name="options" id="availability" autocomplete="off"/> Noon
-													</label>
-													<label class="btn btn-info">
-														<input type="checkbox" name="options" id="availability" autocomplete="off"/> Afternoon
-													</label>
-												</div>
-											</div>
-											<p></p>
-										</li>
-										
-										<li>
-											<div class='col-lg-2'>
-												<label for="tuesday">Thursday</label>
-											</div>
-											<div class='col-lg-4'>
-												<div class="btn-group btn-group-toggle" data-toggle="buttons">
-													<label class="btn btn-info">
-														<input type="checkbox" name="options" id="availability" autocomplete="off" checked/> Morning
-													</label>
-													<label class="btn btn-info">
-														<input type="checkbox" name="options" id="availability" autocomplete="off"/> Noon
-													</label>
-													<label class="btn btn-info">
-														<input type="checkbox" name="options" id="availability" autocomplete="off"/> Afternoon
-													</label>
-												</div>
-											</div>
-											<p></p>
-										</li>
+								<div class="row my-sm-2">
+									<div class='col-lg-3'>
+										<label for="monday">Tuesday</label>
+									</div>
+									<div class='col-lg-4'>
+										<div class="btn-group btn-group-toggle" data-toggle="buttons">
+											<label class="btn btn-info">
+												<input type="checkbox" name="options" id="availability" autocomplete="off" checked/> Morning
+											</label>
+											<label class="btn btn-info">
+												<input type="checkbox" name="options" id="availability" autocomplete="off"/> Noon
+											</label>
+											<label class="btn btn-info">
+												<input type="checkbox" name="options" id="availability" autocomplete="off"/> Afternoon
+											</label>
+										</div>
+									</div>
+									<p></p>
+								</div>
 
-										<li>
-											<div class='col-lg-2'>
-												<label for="tuesday">Friday</label>
-											</div>
-											<div class='col-lg-4'>
-												<div class="btn-group btn-group-toggle" data-toggle="buttons">
-													<label class="btn btn-info">
-														<input type="checkbox" name="options" id="availability" autocomplete="off" checked/> Morning
-													</label>
-													<label class="btn btn-info">
-														<input type="checkbox" name="options" id="availability" autocomplete="off"/> Noon
-													</label>
-													<label class="btn btn-info">
-														<input type="checkbox" name="options" id="availability" autocomplete="off"/> Afternoon
-													</label>
-												</div>
-											</div>
-											<p></p>
-										</li>										
-									
-										<li>
-											<div class='col-lg-2'>
-												<label for="tuesday">Saturday</label>
-											</div>
-											<div class='col-lg-4'>
-												<div class="btn-group btn-group-toggle" data-toggle="buttons">
-													<label class="btn btn-info">
-														<input type="checkbox" name="options" id="availability" autocomplete="off" checked/> Morning
-													</label>
-													<label class="btn btn-info">
-														<input type="checkbox" name="options" id="availability" autocomplete="off"/> Noon
-													</label>
-													<label class="btn btn-info">
-														<input type="checkbox" name="options" id="availability" autocomplete="off"/> Afternoon
-													</label>
-												</div>
-											</div>
-											<p></p>
-										</li>
+								<div class="row my-sm-2">
+									<div class='col-lg-3'>
+										<label for="monday">Wednesday</label>
+									</div>
+									<div class='col-lg-4'>
+										<div class="btn-group btn-group-toggle" data-toggle="buttons">
+											<label class="btn btn-info">
+												<input type="checkbox" name="options" id="availability" autocomplete="off" checked/> Morning
+											</label>
+											<label class="btn btn-info">
+												<input type="checkbox" name="options" id="availability" autocomplete="off"/> Noon
+											</label>
+											<label class="btn btn-info">
+												<input type="checkbox" name="options" id="availability" autocomplete="off"/> Afternoon
+											</label>
+										</div>
+									</div>
+									<p></p>
+								</div>
 
-										<li>
-											<div class='col-lg-2'>
-												<label for="tuesday">Sunday</label>
-											</div>
-											<div class='col-lg-4'>
-												<div class="btn-group btn-group-toggle" data-toggle="buttons">
-													<label class="btn btn-info">
-														<input type="checkbox" name="options" id="availability" autocomplete="off" checked/> Morning
-													</label>
-													<label class="btn btn-info">
-														<input type="checkbox" name="options" id="availability" autocomplete="off"/> Noon
-													</label>
-													<label class="btn btn-info">
-														<input type="checkbox" name="options" id="availability" autocomplete="off"/> Afternoon
-													</label>
-												</div>
-											</div>
-											<p></p>
-										</li>
+								<div class="row my-sm-2">
+									<div class='col-lg-3'>
+										<label for="monday">Thursday</label>
+									</div>
+									<div class='col-lg-4'>
+										<div class="btn-group btn-group-toggle" data-toggle="buttons">
+											<label class="btn btn-info">
+												<input type="checkbox" name="options" id="availability" autocomplete="off" checked/> Morning
+											</label>
+											<label class="btn btn-info">
+												<input type="checkbox" name="options" id="availability" autocomplete="off"/> Noon
+											</label>
+											<label class="btn btn-info">
+												<input type="checkbox" name="options" id="availability" autocomplete="off"/> Afternoon
+											</label>
+										</div>
+									</div>
+									<p></p>
+								</div>
 
-									</ul>
-								</div>				
+								<div class="row my-sm-2">
+									<div class='col-lg-3'>
+										<label for="monday">Friday</label>
+									</div>
+									<div class='col-lg-4'>
+										<div class="btn-group btn-group-toggle" data-toggle="buttons">
+											<label class="btn btn-info">
+												<input type="checkbox" name="options" id="availability" autocomplete="off" checked/> Morning
+											</label>
+											<label class="btn btn-info">
+												<input type="checkbox" name="options" id="availability" autocomplete="off"/> Noon
+											</label>
+											<label class="btn btn-info">
+												<input type="checkbox" name="options" id="availability" autocomplete="off"/> Afternoon
+											</label>
+										</div>
+									</div>
+									<p></p>
+								</div>
 								
+								<div class="row my-sm-2">
+									<div class='col-lg-3'>
+										<label for="monday">Saturday</label>
+									</div>
+									<div class='col-lg-4'>
+										<div class="btn-group btn-group-toggle" data-toggle="buttons">
+											<label class="btn btn-info">
+												<input type="checkbox" name="options" id="availability" autocomplete="off" checked/> Morning
+											</label>
+											<label class="btn btn-info">
+												<input type="checkbox" name="options" id="availability" autocomplete="off"/> Noon
+											</label>
+											<label class="btn btn-info">
+												<input type="checkbox" name="options" id="availability" autocomplete="off"/> Afternoon
+											</label>
+										</div>
+									</div>
+									<p></p>
+								</div>
+
+								<div class="row my-sm-2">
+									<div class='col-lg-3'>
+										<label for="monday">Sunday</label>
+									</div>
+									<div class='col-lg-4'>
+										<div class="btn-group btn-group-toggle" data-toggle="buttons">
+											<label class="btn btn-info">
+												<input type="checkbox" name="options" id="availability" autocomplete="off" checked/> Morning
+											</label>
+											<label class="btn btn-info">
+												<input type="checkbox" name="options" id="availability" autocomplete="off"/> Noon
+											</label>
+											<label class="btn btn-info">
+												<input type="checkbox" name="options" id="availability" autocomplete="off"/> Afternoon
+											</label>
+										</div>
+									</div>
+									<p></p>
+								</div>
 
 								<div class="row my-lg-3">
 									<button type="submit" class="btn btn-primary">Submit</button>				
