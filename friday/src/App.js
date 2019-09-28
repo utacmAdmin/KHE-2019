@@ -47,31 +47,165 @@ function App() {
 				<div class="card-body">
 					<div class="row-lg-5">
 						<form>
-							<div class="col-lg-3">
+							<div class="col-lg-5">
 								<div class="row my-lg-2">
-									<label for="name">Name</label>
+									<label for="name">Name:</label>
 									<input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder=""/>
 								</div>
 
 								<div class="row">						
-									<label for="position">Position</label>
+									<label for="position">Position:</label>
 									<input type="text" class="form-control" id="position" aria-describedby="emailHelp" placeholder=""/>
 								</div>
+								
+								
+								<div class="row my-sm-2">
+									Availability:
+									<ul>
+										<li>
+											<div class='col-lg-2'>
+												<label for="monday">Monday</label>
+											</div>
+											<div class='col-lg-4'>
+												<div class="btn-group btn-group-toggle" data-toggle="buttons">
+													<label class="btn btn-info">
+														<input type="checkbox" name="options" id="availability" autocomplete="off" checked/> Morning
+													</label>
+													<label class="btn btn-info">
+														<input type="checkbox" name="options" id="availability" autocomplete="off"/> Noon
+													</label>
+													<label class="btn btn-info">
+														<input type="checkbox" name="options" id="availability" autocomplete="off"/> Afternoon
+													</label>
+												</div>
+											</div>
+											<p></p>
+										</li>
+										
+										<li>
+											<div class='col-lg-2'>
+												<label for="tuesday">Tuesday</label>
+											</div>
+											<div class='col-lg-4'>
+												<div class="btn-group btn-group-toggle" data-toggle="buttons">
+													<label class="btn btn-info">
+														<input type="checkbox" name="options" id="availability" autocomplete="off" checked/> Morning
+													</label>
+													<label class="btn btn-info">
+														<input type="checkbox" name="options" id="availability" autocomplete="off"/> Noon
+													</label>
+													<label class="btn btn-info">
+														<input type="checkbox" name="options" id="availability" autocomplete="off"/> Afternoon
+													</label>
+												</div>
+											</div>
+											<p></p>
+										</li>
 
-								<div class="row my-lg-2">
-									<label for="availability">Availability</label>
-										<div class="btn-group btn-group-toggle" data-toggle="buttons">
-											<label class="btn btn-info">
-												<input type="checkbox" name="options" id="availability" autocomplete="off" checked/> Morning
-											</label>
-											<label class="btn btn-info">
-												<input type="checkbox" name="options" id="availability" autocomplete="off"/>Noon
-											</label>
-											<label class="btn btn-info">
-												<input type="checkbox" name="options" id="availability" autocomplete="off"/> Afternoon
-											</label>
-										</div>								
-								</div>
+										<li>
+											<div class='col-lg-2'>
+												<label for="tuesday">Wednesday</label>
+											</div>
+											<div class='col-lg-4'>
+												<div class="btn-group btn-group-toggle" data-toggle="buttons">
+													<label class="btn btn-info">
+														<input type="checkbox" name="options" id="availability" autocomplete="off" checked/> Morning
+													</label>
+													<label class="btn btn-info">
+														<input type="checkbox" name="options" id="availability" autocomplete="off"/> Noon
+													</label>
+													<label class="btn btn-info">
+														<input type="checkbox" name="options" id="availability" autocomplete="off"/> Afternoon
+													</label>
+												</div>
+											</div>
+											<p></p>
+										</li>
+										
+										<li>
+											<div class='col-lg-2'>
+												<label for="tuesday">Thursday</label>
+											</div>
+											<div class='col-lg-4'>
+												<div class="btn-group btn-group-toggle" data-toggle="buttons">
+													<label class="btn btn-info">
+														<input type="checkbox" name="options" id="availability" autocomplete="off" checked/> Morning
+													</label>
+													<label class="btn btn-info">
+														<input type="checkbox" name="options" id="availability" autocomplete="off"/> Noon
+													</label>
+													<label class="btn btn-info">
+														<input type="checkbox" name="options" id="availability" autocomplete="off"/> Afternoon
+													</label>
+												</div>
+											</div>
+											<p></p>
+										</li>
+
+										<li>
+											<div class='col-lg-2'>
+												<label for="tuesday">Friday</label>
+											</div>
+											<div class='col-lg-4'>
+												<div class="btn-group btn-group-toggle" data-toggle="buttons">
+													<label class="btn btn-info">
+														<input type="checkbox" name="options" id="availability" autocomplete="off" checked/> Morning
+													</label>
+													<label class="btn btn-info">
+														<input type="checkbox" name="options" id="availability" autocomplete="off"/> Noon
+													</label>
+													<label class="btn btn-info">
+														<input type="checkbox" name="options" id="availability" autocomplete="off"/> Afternoon
+													</label>
+												</div>
+											</div>
+											<p></p>
+										</li>										
+									
+										<li>
+											<div class='col-lg-2'>
+												<label for="tuesday">Saturday</label>
+											</div>
+											<div class='col-lg-4'>
+												<div class="btn-group btn-group-toggle" data-toggle="buttons">
+													<label class="btn btn-info">
+														<input type="checkbox" name="options" id="availability" autocomplete="off" checked/> Morning
+													</label>
+													<label class="btn btn-info">
+														<input type="checkbox" name="options" id="availability" autocomplete="off"/> Noon
+													</label>
+													<label class="btn btn-info">
+														<input type="checkbox" name="options" id="availability" autocomplete="off"/> Afternoon
+													</label>
+												</div>
+											</div>
+											<p></p>
+										</li>
+
+										<li>
+											<div class='col-lg-2'>
+												<label for="tuesday">Sunday</label>
+											</div>
+											<div class='col-lg-4'>
+												<div class="btn-group btn-group-toggle" data-toggle="buttons">
+													<label class="btn btn-info">
+														<input type="checkbox" name="options" id="availability" autocomplete="off" checked/> Morning
+													</label>
+													<label class="btn btn-info">
+														<input type="checkbox" name="options" id="availability" autocomplete="off"/> Noon
+													</label>
+													<label class="btn btn-info">
+														<input type="checkbox" name="options" id="availability" autocomplete="off"/> Afternoon
+													</label>
+												</div>
+											</div>
+											<p></p>
+										</li>
+
+									</ul>
+								</div>				
+								
+
 								<div class="row my-lg-3">
 									<button type="submit" class="btn btn-primary">Submit</button>				
 								</div>
@@ -81,22 +215,53 @@ function App() {
 				</div>
 			</div>
 		</div>
-    <div class="card">
-        <div class="card-header" id="headingTwo">
-			<h2 class="mb-0">
-				<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-					Business Analytics
-				</button>
-			</h2>
-        </div>
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-          <div class="card-body">
-            This is where those go
-          </div>
-        </div>
-      </div>
+		
+		<div class="card">
+			<div class="card-header" id="headingTwo">
+				<h2 class="mb-0">
+					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+					Delete Employee
+					</button>
+				</h2>
+			</div>
+			<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+				<div class="card-body">
+					
+					<div class="row-lg-5">
+						<form>
+							<div class="col-lg-3">
+								<div class="row my-lg-2">
+									<label for="name">Name</label>
+									<input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder=""/>
+								</div>
+						
+								<div class="row my-lg-3">
+									<button type="submit" class="btn btn-primary">Submit</button>				
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="card">
+			<div class="card-header" id="headingTwo">
+				<h2 class="mb-0">
+					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+						Business Analytics
+					</button>
+				</h2>
+			</div>
+			<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+				<div class="card-body">
+				This is where those go
+				</div>
+			</div>
+		</div>
+		
     </div>
-    </div>
+	</div>
   );
 }
 
