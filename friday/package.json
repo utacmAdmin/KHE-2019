@@ -4,10 +4,13 @@
   "private": true,
   "dependencies": {
     "@remotelock/react-week-scheduler": "^3.5.7",
+    "axios": "^0.19.0",
+    "bootstrap": "^4.3.1",
     "moment": "^2.24.0",
     "npm": "^6.11.3",
     "react": "^16.10.0",
     "react-available-times": "^1.2.2",
+    "react-bootstrap": "^1.0.0-beta.12",
     "react-dom": "^16.10.0",
     "react-scripts": "3.1.2",
     "react-week-calendar": "^0.1.3",
